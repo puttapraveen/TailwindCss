@@ -7,7 +7,9 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-
+.right{
+  margin-left:auto;
+}
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -22,6 +24,7 @@ html {
 
 body {
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 /**
@@ -55,11 +58,18 @@ hr {
   height: 0; /* 1 */
   overflow: visible; /* 2 */
 }
+.header{
+  height:72px;
+}
+.logo{
+  width:9rem;
+}
+.signup{
+  background-color:#00a295;
+  color:white;
+  height:30px;
+}
 
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
 
 pre {
   font-family: monospace, monospace; /* 1 */
