@@ -83,7 +83,10 @@ pre {
   font-size: 1em; /* 2 */
 }
 .cards1{
-  height:80vh;
+  height:auto;
+}
+.c1,.c2,.c3{
+  width:420px;
 }
 
 /* Text-level semantics
