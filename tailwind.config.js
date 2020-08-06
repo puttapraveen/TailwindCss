@@ -5,6 +5,9 @@ module.exports = {
       center:true,
       padding:'2rem'
     },
+    colors: {
+        def: 'ffab9d'
+      },
   },
   variants: {},
   plugins: [],

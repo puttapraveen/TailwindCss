@@ -94,7 +94,10 @@ pre {
 .making{
   color:rgb(255, 234, 156);
 }
-
+.section4-full .firstpic img{
+  height:500px;
+  width:auto;
+}
 /* Text-level semantics
    ========================================================================== */
 
