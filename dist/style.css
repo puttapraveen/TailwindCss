@@ -88,6 +88,12 @@ pre {
 .c1,.c2,.c3{
   width:420px;
 }
+.section3{
+  background-color:#ffab9d;
+}
+.making{
+  color:rgb(255, 234, 156);
+}
 
 /* Text-level semantics
    ========================================================================== */
