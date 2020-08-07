@@ -76,7 +76,13 @@ hr {
   color:white;
   height:30px;
 }
+.section6{
+  background-color: #80d1ca;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-image: url('https://assets.meero.com/meeroshowcase/images/front/V5/blog/wave-transparent.svg');
 
+}
 
 pre {
   font-family: monospace, monospace; /* 1 */
