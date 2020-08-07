@@ -83,6 +83,10 @@ hr {
   background-image: url('https://assets.meero.com/meeroshowcase/images/front/V5/blog/wave-transparent.svg');
 
 }
+.hiding{
+  margin-left:1000px;
+  margin-top:350px;
+}
 
 pre {
   font-family: monospace, monospace; /* 1 */
