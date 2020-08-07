@@ -117,6 +117,12 @@ pre {
 .footerr .title{
   color:white;
 }
+.mobile-view{
+  background-color: #ecc570;
+}
+.large{
+  background-color: #ecc570;
+}
 /* Text-level semantics
    ========================================================================== */
 
