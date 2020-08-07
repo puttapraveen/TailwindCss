@@ -98,6 +98,15 @@ pre {
   height:500px;
   width:auto;
 }
+.footerr{
+  background-color: rgb(0, 162, 149);
+}
+.footerr li{
+  color: rgb(128, 223, 233);
+}
+.footerr .title{
+  color:white;
+}
 /* Text-level semantics
    ========================================================================== */
 
