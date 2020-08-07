@@ -3,10 +3,813 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="2; url='./dist/index.html' ">
-    <title>Document</title>
+    <link rel="stylesheet" href="./dist/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <title>TASK</title>
 </head>
-<body>
+<body class="bg-white flex flex-col">
     
+    
+
+    <div class="header flex justify-between lg:justify-start md:justify-start xl:justify-start text-gray-700">
+    <div class="px-8 py-6"> 
+        <div class="logo ml-2 lg:ml-16" >
+            <img class="h-10 pb-3" src="./dist/logo__full--green.svg" alt="logo">
+        </div>
+    </div>    
+    <div class="tags self-center hidden lg:block md:block xl:block">
+        <ul class="flex text-center">
+            <li class="px-3 hover:text-teal-500">Photographers</li>
+            <li class="px-3 hover:text-teal-500">Businesses</li>
+            <li class="px-3 hover:text-teal-500">More</li>
+        </ul>
+    </div>
+    <div class="sign mr-16 right self-center hidden lg:block md:block xl:block">
+        <ul class="inline flex text-center">
+            <li class="px-6 py-2 hover:text-teal-500 ">Sign in</li>
+            <li class="px-8 py-2 bg-teal-500 text-white rounded-full hover:shadow-2xl">Sign up</li>
+        </ul>
+    </div>
+    <div class="px-6 py-6 xl:hidden md:hidden lg:hidden">
+        <div class="right menu" >
+            <svg class="fill-current text-gray-500 w-8 h-8" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>        </div> 
+    </div>
+    </div>
+    
+
+
+    <div class="mainmob flex flex-col md:hidden lg:hidden xl:hidden">
+        <div class="image flex justify-center">
+            <div class="self-center square bg-white h-10 w-16 flex justify-center rounded-lg absolute">
+                <svg class="self-center fill-current text-teal-500" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M8 5v14l11-7z"/></svg>
+            </div>
+        
+            <img class="" src="./dist/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL2NvdmVyLXYyLW1vYmlsZS5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0" alt="">                
+        </div>
+
+
+        <div class="texting w-full text-5xl font-bold px-10">
+        <div class="firstline flex  mt-4">
+            <h1 class="text-red-500">Make.</h1>
+            <h1 class="text-teal-600">Creation.</h1>
+        </div>
+        <div >
+            <h1 class="text-yellow-400">Work.</h1>
+        </div>
+        </div>
+
+        <div class="subtitles text-gray-500 text-2xl px-10 mt-4">
+            <h2>Do you have a creative vision?</h2>
+            <h2>Bring it to life with Meero</h2>
+        </div>
+        <div class="buttons px-10 mt-8">
+            <div class="first bg-teal-600 pt-2 text-white text-center w-48 h-10 rounded-full hover:shadow-xl">
+                I run a business
+            </div>
+            <div class="mt-3 second pt-2 w-56 h-10 rounded-full border-2 border-teal-500  text-center text-teal-500">
+                I am a photographer
+            </div>
+
+        </div>
+    </div>
+    <div class="full-screen hidden md:block lg:block xl:block">
+        <div class="lg:ml-24 xl:ml-24 md:ml-16 cont absolute flex justify-between">
+            <div class="left self-center flex flex-col mt-24" >
+
+                <div class="texting w-full text-5xl font-bold">
+                    <div class="firstline flex">
+                        <h1 class="text-white">Make. Creation. Work.</h1>
+                    </div>
+                </div>
+            
+                <div class="subtitles text-white text-2xl mt-6">
+                    <h2>Do you have a creative vision?</h2>
+                    <h2>Bring it to life with Meero</h2>
+                </div>
+                <div class="buttons mt-16 flex">
+                    <div class="first bg-teal-600 pt-3 text-white text-center w-56 h-12 rounded-full hover:shadow-xl">
+                        I run a business
+                    </div>
+                    <div class="ml-6 second pt-3 w-64 h-12 rounded-full border-2 border-white  text-center text-white">
+                        I am a photographer
+                    </div>
+            </div>
+            </div>
+            <div class="righht self-center bg-red-600">
+        
+                <div class="self-center square bg-white h-12 w-20 flex justify-center rounded-lg absolute">
+                    <svg class="h-8 w-8 self-center fill-current text-black" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M8 5v14l11-7z"/></svg>
+                </div>
+            </div>
+        </div>
+        <img class="full lg:object-center object-cover" src="https://eiko.ai/eiko/meero/0lqc_x93PUtgm3F-QI_2Bz7lXtg/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL2NvdmVyLXYzLmpwZyJdfSwib3BlcmF0aW9ucyI6W10sIm91dHB1dCI6e319" srcset="https://eiko.ai/eiko/meero/sW6u-WmjF3g7BjZrg6DZ4Weotx4/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL2NvdmVyLXYzLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjozMjB9XSwib3V0cHV0Ijp7fX0= 320w, https://eiko.ai/eiko/meero/z0e-nqugFnV52z2-cxRhUlMPS8A/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL2NvdmVyLXYzLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjo2NDB9XSwib3V0cHV0Ijp7fX0= 640w, https://eiko.ai/eiko/meero/Hvml5lbLWn9LqQEiSLMJwbVG6to/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL2NvdmVyLXYzLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjo3Njh9XSwib3V0cHV0Ijp7fX0= 768w, https://eiko.ai/eiko/meero/IIwCRXsDBrhh-8ZfZmy_41K6vIY/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL2NvdmVyLXYzLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxMDI0fV0sIm91dHB1dCI6e319 1024w, https://eiko.ai/eiko/meero/fyCspZl3rlPEEbvpcmtJT2D68qs/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL2NvdmVyLXYzLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxMzY2fV0sIm91dHB1dCI6e319 1366w, https://eiko.ai/eiko/meero/M4Nwa3Pn3IFrbkjjx595JkqsI1E/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL2NvdmVyLXYzLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxNTM2fV0sIm91dHB1dCI6e319 1536w, https://eiko.ai/eiko/meero/Zd74G8IX5GJ6mrSXqhlIKNHm5Zg/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL2NvdmVyLXYzLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxNjAwfV0sIm91dHB1dCI6e319 1600w, https://eiko.ai/eiko/meero/makBQEgpbfRFgNMcTHgtKdDFBYc/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL2NvdmVyLXYzLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxOTIwfV0sIm91dHB1dCI6e319 1920w" sizes="100vw">
+    </div>
+
+    <div class="section2 mt-2">
+        <hr class="line w-full h-1bg-gray-400 lg:hidden md:hidden xl:hidden"/>
+        <div class="matter mt-16 flex flex-col">
+            <div class="text-center extra ml-10 mr-10">
+                <h1 class="text-4xl lg:text-4xl md:text-3xl xl:text-5xl font-bold text-teal-600">Extraordinary tools <span class="text-gray-700"> for extraordinary talent</span></h1>
+            </div>
+            <div class="mt-6 text-center font-light text-3xl text-gray-600 extra ml-8 mr-8 flex flex-col lg:hidden xl:hidden md:hidden ">
+                <span>We’re helping photographers </span>
+                <span>to grow their business and </span>
+                <span>develop their skills</span>
+            </div>
+           
+           
+            <div class="hidden lg:block xl:block md:block mt-6 md:mt-0 lg:mt-0 xl:mt-0 text-center font-light text-lg text-gray-600 extra ml-8 mr-8 ">
+                We’re helping photographers <span class="text-teal-600">to grow their business </span> and 
+                <span class="text-red-500">develop their skills</span>
+            </div>
+ 
+           
+            <div class="mt-6 flex self-center bg-teal-500 w-56 h-12 rounded-full">
+                <span class="self-center w-full text-white ml-12 p-4 text-lg">Find out more</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="cards1 w-full self-center flex flex-col">
+        
+        <div class="two mt-4 flex w-full items-center flex-col lg:justify-evenly lg:flex-row">
+        <div class="c1 ml-5 mr-5 mt-10 card-1 h-auto bg-white flex flex-col rounded-md shadow-lg hover:shadow-2xl">
+             <img src="https://assets.meero.com/meeroshowcase/images/front/V5/talent/meero-jobs1.svg" alt="">
+                <div class="info h-64 w-full flex flex-col items-center justify-center">    
+                    <h1 class="title text-gray-700 text-2xl font-bold">mygigs</h1>
+                    <h2 class="subtitle text-orange-500 font-bold">More shoots. More freedom</h2>
+                    <h3 class="tagline text-gray-600 pr-4 pl-4">Ebgage with top clients and help us </h3>
+                    <h3 class="tagline text-gray-600 pr-4 pl-4">bring their brands to the world</h3>
+                </div>
+        </div>
+
+        <div class="c2 mt-10 card-1  bg-white flex flex-col rounded-md shadow-lg hover:shadow-2xl">
+            <img src="https://assets.meero.com/meeroshowcase/images/front/V5/talent/mymeero1.svg" alt="">
+               <div class="info h-64 w-full flex flex-col items-center justify-center">    
+                   <h1 class="title text-gray-700 text-2xl font-bold">myBusiness</h1>
+                   <h2 class="subtitle text-teal-600 font-bold">Free to focus on yourself</h2>
+                   <h3 class="tagline text-gray-600 pr-4 pl-4">Just take great shots. Our </h3>
+                   <h3 class="tagline text-gray-600 pr-4 pl-4">management tool will take care of the rest</h3>
+               </div>
+       </div>
+    </div>
+
+    <div class="third flex w-full justify-center">
+       <div class="c3 mt-10 card-1 h-auto bg-white flex flex-col rounded-md shadow-lg hover:shadow-2xl">
+        <img src="https://assets.meero.com/meeroshowcase/images/front/V5/talent/community1.svg" alt="">
+           <div class="info h-64 w-full flex flex-col items-center justify-center">    
+               <h1 class="title text-gray-700 text-2xl font-bold">community</h1>
+               <h2 class="subtitle text-red-500 font-bold">Mingle. Learn. Connect.</h2>
+               <h3 class="tagline text-gray-600 pr-4 pl-4">Join the fastest growing community </h3>
+               <h3 class="tagline text-gray-600 pr-4 pl-4">of creatives worldwide.</h3>
+           </div>
+        </div>
+    </div> 
+
+    </div>
+
+    <div class="section3 mt-12 w-full h-auto flex content-center flex-col overflow-hidden">
+        <div class="title-3 w-full mt-16 mb-10 font-extrabold text-center">
+            <h1 class="text-4xl text-gray-800 opacity-75"><span class="making"> Making magic</span> with Meero</h1>
+        </div>
+        
+        <div class="videos">         
+            <div class="carousel" data-flickity='{"wrapAround":true,"autoPlay":3000 }'>
+            
+            
+                <div class="first h-auto w-64 m-5 ">
+                <a href="https://www.youtube.com/embed/eWjvb6NUW4M?autoplay=1&amp;rel=0&amp;cc_load_policy=1" data-fancybox="" data-type="iframe" tabindex="-1">
+                    <div class="picture justify-center flex w-full h-full hover:shadow-2xl">
+                        <div class="square self-center bg-white h-12 w-16 flex justify-center rounded-full absolute">
+                            <svg class="self-center h-8 w-8 fill-current text-teal-500" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+
+                        <img class="h-64 w-64 rounded-lg" src="https://eiko.ai/eiko/meero/myEivRfTEjkZOzxvcfE2kahlg0I/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9hcnRodXIuanBnIl19LCJvcGVyYXRpb25zIjpbXSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0=" srcset="https://eiko.ai/eiko/meero/ftnwJE5PjsbPKT0bIKz7TIPmBLI/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9hcnRodXIuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjMyMH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 320w, https://eiko.ai/eiko/meero/t49AwWvAW74i9WXabjygMF38-JU/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9hcnRodXIuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjY0MH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 640w, https://eiko.ai/eiko/meero/A92HNKW1mm6vP1eh5TVggqZKpeU/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9hcnRodXIuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjc2OH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 768w, https://eiko.ai/eiko/meero/cszrt4PC6YZWgnfNVQVIihgIjFs/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9hcnRodXIuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjEwMjR9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1024w, https://eiko.ai/eiko/meero/hPVYW_T9tesCeab_6aJ31vUZb0c/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9hcnRodXIuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjEzNjZ9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1366w, https://eiko.ai/eiko/meero/qy_NrQg5OEouh2LOV9cmTsFqIYE/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9hcnRodXIuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjE1MzZ9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1536w, https://eiko.ai/eiko/meero/s20lrlU6h--lCjBEl1zjTtxqOX0/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9hcnRodXIuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjE2MDB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1600w, https://eiko.ai/eiko/meero/O0w2r5TdjgT-7rz1B4jKY1ylTOw/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9hcnRodXIuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjE5MjB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1920w" sizes="(max-width: 50rem) 75vw, (max-width: 70rem) 50vw, (max-width: 100rem) 25vw, 20vw" alt="Interview Arthur">
+                    </div>
+                </a>
+                <div class="names opacity-75 mt-8 mb-10">
+                    <h1 class="text-lg">Arthur</h1>
+                    <span class="text-lg text-white mb-5">Paris</span>
+                </div>
+            </div>
+              
+            <div class="first h-auto w-64 m-5 ">
+                <a href="https://www.youtube.com/embed/MMVFd5K6AmQ?autoplay=1&amp;rel=0&amp;cc_load_policy=1" data-fancybox="" data-type="iframe" tabindex="-1">
+                    <div class="picture justify-center flex w-full h-full hover:shadow-2xl">
+                        <div class="square self-center bg-white h-12 w-16 flex justify-center rounded-full absolute">
+                            <svg class="self-center h-8 w-8 fill-current text-teal-500" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <img class="h-64 w-64 rounded-lg" src="https://eiko.ai/eiko/meero/XQymNUdhOybUODRzMI5EUACEGAI/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC92ZXJvbmljYS1ydWl6LmpwZyJdfSwib3BlcmF0aW9ucyI6W10sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19" srcset="https://eiko.ai/eiko/meero/AZWKrOV2ZSuZwRwQ4OrhbmTYYFU/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC92ZXJvbmljYS1ydWl6LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjozMjB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 320w, https://eiko.ai/eiko/meero/khXVLTLrLcIZVoDCMRPPGF1WSl0/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC92ZXJvbmljYS1ydWl6LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjo2NDB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 640w, https://eiko.ai/eiko/meero/S_cP1pYhp3Ouh9TLm2Fz2W4vzJo/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC92ZXJvbmljYS1ydWl6LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjo3Njh9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 768w, https://eiko.ai/eiko/meero/VsD1c0YGVmdriZcGdPdWIDG4bw8/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC92ZXJvbmljYS1ydWl6LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxMDI0fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1024w, https://eiko.ai/eiko/meero/3jVVT9QBdRhKcihPjgLYkwgrUH4/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC92ZXJvbmljYS1ydWl6LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxMzY2fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1366w, https://eiko.ai/eiko/meero/c4iaV7SrlaqkauDSR9Xy-YQOAqA/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC92ZXJvbmljYS1ydWl6LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxNTM2fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1536w, https://eiko.ai/eiko/meero/pXW_iAEjAkm2O8vmrtiR-X_z9PE/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC92ZXJvbmljYS1ydWl6LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxNjAwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1600w, https://eiko.ai/eiko/meero/1IF_2XRRo4lsv6FxmCbd6n1Z-GA/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC92ZXJvbmljYS1ydWl6LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxOTIwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1920w" sizes="(max-width: 50rem) 75vw, (max-width: 70rem) 50vw, (max-width: 100rem) 25vw, 20vw" alt="Interview Veronica">
+                    </div>
+                </a>
+                <div class="names opacity-75 mt-8 mb-10">
+                    <h1 class="text-lg">Adam</h1>
+                    <span class="text-lg text-white mb-5">Tokyo</span>
+                </div>
+            </div>
+       
+            <div class="first h-auto w-64 m-5 ">
+                <a href="https://www.youtube.com/embed/tKjYbMHbDUI?autoplay=1&amp;rel=0&amp;cc_load_policy=1" data-fancybox="" data-type="iframe" tabindex="0">
+                    <div class="picture justify-center flex w-full h-full hover:shadow-2xl">
+                        <div class="square self-center bg-white h-12 w-16 flex justify-center rounded-full absolute">
+                            <svg class="self-center h-8 w-8 fill-current text-teal-500" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <img class="h-64 w-64 rounded-lg" src="https://eiko.ai/eiko/meero/knNr1O_AzEvqfdshIdlTQ03JB1w/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9hZGFtLmpwZyJdfSwib3BlcmF0aW9ucyI6W10sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19" srcset="https://eiko.ai/eiko/meero/vRtMGdBOwyco9ng085nCrzJB2iI/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9hZGFtLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjozMjB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 320w, https://eiko.ai/eiko/meero/IjOGwvJ42YjTW-EFKNzRt1tiVrw/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9hZGFtLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjo2NDB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 640w, https://eiko.ai/eiko/meero/Wl6so66__01bHz9gEaPxL8i8g8g/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9hZGFtLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjo3Njh9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 768w, https://eiko.ai/eiko/meero/cjj600KYFgP0IcXEHE5JzdxVLUk/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9hZGFtLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxMDI0fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1024w, https://eiko.ai/eiko/meero/GE0CJTSc5AkUQ7jiqDrxdU0MHvk/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9hZGFtLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxMzY2fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1366w, https://eiko.ai/eiko/meero/GXXJ1EHaYAf_P7TDHkYas-oleok/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9hZGFtLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxNTM2fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1536w, https://eiko.ai/eiko/meero/CsnUvE46YDsU-zzVtE-_PBrtgGg/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9hZGFtLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxNjAwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1600w, https://eiko.ai/eiko/meero/BW-uWpTYvVlQqMX7wrPs84u7uU0/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9hZGFtLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxOTIwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1920w" sizes="(max-width: 50rem) 75vw, (max-width: 70rem) 50vw, (max-width: 100rem) 25vw, 20vw" alt="Interview Adam">
+                   </div>
+                </a>
+                <div class="names opacity-75 mt-8 mb-10">
+                    <h1 class="text-lg">Nikki</h1>
+                    <span class="text-lg text-white mb-5">Escondido</span>
+                </div>
+            </div>
+            
+       
+            
+            <div class="first h-auto w-64 m-5 ">
+                <a href="https://www.youtube.com/embed/x3r5aWz7Wpg?autoplay=1&amp;rel=0&amp;cc_load_policy=1" data-fancybox="" data-type="iframe" tabindex="0">
+                    <div class="picture justify-center flex w-full h-full hover:shadow-2xl">
+                        <div class="square self-center bg-white h-12 w-16 flex justify-center rounded-full absolute">
+                            <svg class="self-center h-8 w-8 fill-current text-teal-500" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+
+                 <img class="h-64 w-64 rounded-lg" src="https://eiko.ai/eiko/meero/8d9Mds7NLUaD_aB3G-098F6gXXo/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9uaWtraS5qcGciXX0sIm9wZXJhdGlvbnMiOltdLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ==" srcset="https://eiko.ai/eiko/meero/8ykWeF29E9h_Oidf6j2HNHTBb1Y/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9uaWtraS5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MzIwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 320w, https://eiko.ai/eiko/meero/QAn-h4Grsfs-i3SXeHDmH30ufB0/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9uaWtraS5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6NjQwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 640w, https://eiko.ai/eiko/meero/V0PW6CnJkfltvOpkzbHf06bruSE/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9uaWtraS5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6NzY4fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 768w, https://eiko.ai/eiko/meero/T3XOTw8DQM2SyBTSbln3n-VqalQ/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9uaWtraS5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTAyNH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1024w, https://eiko.ai/eiko/meero/YYIHqvVJVcwxFmxIsSVWCKLVzjs/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9uaWtraS5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTM2Nn1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1366w, https://eiko.ai/eiko/meero/b7uKN8jVYxVn3CV0bMFQbbgEblQ/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9uaWtraS5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTUzNn1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1536w, https://eiko.ai/eiko/meero/43r2w-IE4yPw2q6Z1pOKas67Fx0/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9uaWtraS5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTYwMH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1600w, https://eiko.ai/eiko/meero/j40OS001C56jlT8iPMtMHOVwnq8/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9uaWtraS5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTkyMH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1920w" sizes="(max-width: 50rem) 75vw, (max-width: 70rem) 50vw, (max-width: 100rem) 25vw, 20vw" alt="Interview Nikki">
+                       
+                    </div>
+                </a>
+                <div class="names opacity-75 mt-8 mb-10">
+                    <h1 class="text-lg">Lauren</h1>
+                    <span class="text-lg text-white mb-5">Little Rock</span>
+                </div>
+            </div>
+            
+            <div class="first h-auto w-64 m-5 ">
+                <a href="https://www.youtube.com/embed/vxNXzBFNeFU?autoplay=1&amp;rel=0&amp;cc_load_policy=1" data-fancybox="" data-type="iframe" tabindex="0">
+                    <div class="picture justify-center flex w-full h-full hover:shadow-2xl">
+                        <div class="square self-center bg-white h-12 w-16 flex justify-center rounded-full absolute">
+                            <svg class="self-center h-8 w-8 fill-current text-teal-500" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+
+                     <img class="h-64 w-64 rounded-lg" src="https://eiko.ai/eiko/meero/i9anBzK4Rzd3c18zSVukZCZ52ro/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9sYXVyZW4tbWNjdWxsb3VnaC5qcGciXX0sIm9wZXJhdGlvbnMiOltdLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ==" srcset="https://eiko.ai/eiko/meero/jFuCZ2x4F-Ka-KDGFh6YwGuLTqA/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9sYXVyZW4tbWNjdWxsb3VnaC5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MzIwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 320w, https://eiko.ai/eiko/meero/cj3afvaojewaoKvKpbadJD-W8qU/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9sYXVyZW4tbWNjdWxsb3VnaC5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6NjQwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 640w, https://eiko.ai/eiko/meero/X3l4wg2hWpJmp92egB6nxSC41yg/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9sYXVyZW4tbWNjdWxsb3VnaC5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6NzY4fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 768w, https://eiko.ai/eiko/meero/LoONonO0OJq_hwjPXTiqFh9fd10/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9sYXVyZW4tbWNjdWxsb3VnaC5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTAyNH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1024w, https://eiko.ai/eiko/meero/NhSzHasnjRVOSDHpV6mjTlZYHSI/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9sYXVyZW4tbWNjdWxsb3VnaC5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTM2Nn1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1366w, https://eiko.ai/eiko/meero/BEiMYr5wWeuXEFpoloEFfW6XYVg/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9sYXVyZW4tbWNjdWxsb3VnaC5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTUzNn1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1536w, https://eiko.ai/eiko/meero/TXFuOqUYdaJrvS_UifrB7J-3oNc/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9sYXVyZW4tbWNjdWxsb3VnaC5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTYwMH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1600w, https://eiko.ai/eiko/meero/RtlWeokH-y_Rv2La24CyBf4cVKI/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9sYXVyZW4tbWNjdWxsb3VnaC5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTkyMH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1920w" sizes="(max-width: 50rem) 75vw, (max-width: 70rem) 50vw, (max-width: 100rem) 25vw, 20vw" alt="Interview Lauren">
+               
+                    </div>
+                </a>
+                <div class="names opacity-75 mt-8 mb-10">
+                    <h1 class="text-lg">Veronica</h1>
+                    <span class="text-lg text-white mb-5">Buenos Aires</span>
+                </div>
+            </div>
+            <div class="first h-auto w-64 m-5 ">
+                <a href="https://www.youtube.com/embed/vxNXzBFNeFU?autoplay=1&amp;rel=0&amp;cc_load_policy=1" data-fancybox="" data-type="iframe" tabindex="0">
+                    <div class="picture justify-center flex w-full h-full hover:shadow-2xl">
+                        <div class="square self-center bg-white h-12 w-16 flex justify-center rounded-full absolute">
+                            <svg class="self-center h-8 w-8 fill-current text-teal-500" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+
+                    <img class="h-64 w-64 rounded-lg" src="https://eiko.ai/eiko/meero/i9anBzK4Rzd3c18zSVukZCZ52ro/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9sYXVyZW4tbWNjdWxsb3VnaC5qcGciXX0sIm9wZXJhdGlvbnMiOltdLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ==" srcset="https://eiko.ai/eiko/meero/jFuCZ2x4F-Ka-KDGFh6YwGuLTqA/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9sYXVyZW4tbWNjdWxsb3VnaC5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MzIwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 320w, https://eiko.ai/eiko/meero/cj3afvaojewaoKvKpbadJD-W8qU/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9sYXVyZW4tbWNjdWxsb3VnaC5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6NjQwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 640w, https://eiko.ai/eiko/meero/X3l4wg2hWpJmp92egB6nxSC41yg/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9sYXVyZW4tbWNjdWxsb3VnaC5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6NzY4fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 768w, https://eiko.ai/eiko/meero/LoONonO0OJq_hwjPXTiqFh9fd10/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9sYXVyZW4tbWNjdWxsb3VnaC5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTAyNH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1024w, https://eiko.ai/eiko/meero/NhSzHasnjRVOSDHpV6mjTlZYHSI/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9sYXVyZW4tbWNjdWxsb3VnaC5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTM2Nn1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1366w, https://eiko.ai/eiko/meero/BEiMYr5wWeuXEFpoloEFfW6XYVg/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9sYXVyZW4tbWNjdWxsb3VnaC5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTUzNn1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1536w, https://eiko.ai/eiko/meero/TXFuOqUYdaJrvS_UifrB7J-3oNc/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9sYXVyZW4tbWNjdWxsb3VnaC5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTYwMH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1600w, https://eiko.ai/eiko/meero/RtlWeokH-y_Rv2La24CyBf4cVKI/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNFwvdGVzdGltb255XC9sYXVyZW4tbWNjdWxsb3VnaC5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTkyMH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1920w" sizes="(max-width: 50rem) 75vw, (max-width: 70rem) 50vw, (max-width: 100rem) 25vw, 20vw" alt="Interview Lauren">
+                     </div>
+                </a>
+                <div class="names opacity-75 mt-8 mb-10">
+                    <h1 class="text-lg">Veronica</h1>
+                    <span class="text-lg text-white mb-5">Buenos Aires</span>
+                </div>
+            </div>
+        
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section4 w-full h-auto mt-10 lg:hidden md:hidden xl:hidden">
+        <div class="p-10 light-text ">
+            <h1 class="text-5xl font-bold text-teal-600 text-center">Lightning-fast visual production at any scale</h1>
+        </div>
+        <div class="plates">
+        <div class="carousel" data-flickity='{"wrapAround":true,"autoPlay":3000 }'>
+    
+            <div class="firstpic w-full flex flex-col items-center justify-center">
+                 <img class="h-64" src="https://eiko.ai/eiko/meero/rpb7E3a6nlp7U8xKW0duZt0k-R4/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMV92Mi5wbmciXX0sIm9wZXJhdGlvbnMiOltdLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ==" srcset="https://eiko.ai/eiko/meero/Yt2KfNQ1ogCeVMaM9aRENsOgqIo/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMV92Mi5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MzIwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 320w, https://eiko.ai/eiko/meero/zE5O2QDtx9wy0tq_vUtBdYIKp4U/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMV92Mi5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6NjQwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 640w, https://eiko.ai/eiko/meero/tWNj3LamNFuAlXuCLAlnaUivkl0/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMV92Mi5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6NzY4fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 768w, https://eiko.ai/eiko/meero/GNN2LHpnl3nYK-o2OsMcI4U0xc8/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMV92Mi5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTAyNH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1024w, https://eiko.ai/eiko/meero/HM6OlLvwpE7PkLf3W7e9eRtBOrA/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMV92Mi5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTM2Nn1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1366w, https://eiko.ai/eiko/meero/JW40Vg8F5absQBKbSh5oT4U19hU/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMV92Mi5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTUzNn1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1536w, https://eiko.ai/eiko/meero/lGdrph_69VIFeX46_Gp18hKTwYw/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMV92Mi5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTYwMH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1600w, https://eiko.ai/eiko/meero/7_4V63gNa0UvO77W1Kh-VKRUoYk/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMV92Mi5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTkyMH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1920w" sizes="100vw" alt="Meero platform">              
+                    <h1 class="platform text-4xl font-bold text-gray-800">
+                        Meero platform
+                    </h1>
+                    <hr class="line w-full h-1bg-gray-400 lg:hidden md:hidden xl:hidden"/>
+                    <h2 class="syb text-2xl text-gray-600 mt-6 ml-24 mr-24 text-center">Order shoots and download ready-to-publish visuals in just a few clicks</h2>
+            </div>
+
+
+            <div class="secondpic w-full flex flex-col items-center justify-center">
+                <img class="h-64" src="https://eiko.ai/eiko/meero/lbyapFVIAwhPLg7Rde28E-qnaD8/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMl92My5wbmciXX0sIm9wZXJhdGlvbnMiOltdLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ==" srcset="https://eiko.ai/eiko/meero/tGjtDSgaDYH2ZEZJcprk0KYbTi0/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMl92My5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MzIwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 320w, https://eiko.ai/eiko/meero/DxDDDwv8vAw5Jpxy1_k3yVB93z4/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMl92My5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6NjQwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 640w, https://eiko.ai/eiko/meero/n6W56YCcKc0DRr1WkmFD2-QKMOI/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMl92My5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6NzY4fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 768w, https://eiko.ai/eiko/meero/9XHFDykU4ywkX1lapalMEgmnmdI/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMl92My5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTAyNH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1024w, https://eiko.ai/eiko/meero/VzAt2iTkrFHj1k6Z4um3eJkSoGE/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMl92My5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTM2Nn1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1366w, https://eiko.ai/eiko/meero/2o65liz4-Sv2GMsonOr8JlzpbrQ/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMl92My5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTUzNn1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1536w, https://eiko.ai/eiko/meero/JEfHevBUGAntebPRJYPFO8kxExY/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMl92My5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTYwMH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1600w, https://eiko.ai/eiko/meero/XvVkmQD07OjdjyJnEw7LUXoeb6Q/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMl92My5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTkyMH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1920w" sizes="100vw" alt="Content production">                <h1 class="platform text-4xl font-bold text-gray-800">
+                    Content production
+                  </h1>
+                  <hr class="line w-full h-1bg-gray-400 lg:hidden md:hidden xl:hidden"/>
+                  <h2 class="syb text-2xl text-gray-600 mt-6 ml-24 mr-24 text-center">Shoots performed by 60K vetted photographers and managed by our 120 person in-house production team.</h2>
+               </div>
+
+               <div class="thirdpic w-full flex flex-col items-center justify-center">
+                    <img class="h-64" src="https://eiko.ai/eiko/meero/AeisvY0BXkdOab3mxt1Pl-DRFyI/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfM192My5wbmciXX0sIm9wZXJhdGlvbnMiOltdLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ==" srcset="https://eiko.ai/eiko/meero/9M0GREQffcbg_IWWRAE2PP6NcWc/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfM192My5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MzIwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 320w, https://eiko.ai/eiko/meero/yOw_3oVbCH9D-M2vDqdKkzxxx-o/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfM192My5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6NjQwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 640w, https://eiko.ai/eiko/meero/4d6yRrJHKM0stx5zFE2YnkRDU9E/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfM192My5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6NzY4fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 768w, https://eiko.ai/eiko/meero/u5_8zbzzx_KDhSx_IXPaRZmAGYk/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfM192My5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTAyNH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1024w, https://eiko.ai/eiko/meero/Nv_HTV0Hs1llEBdpJrYpwwK5WOY/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfM192My5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTM2Nn1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1366w, https://eiko.ai/eiko/meero/cViYeqG7cARV54SPI3YWiKgYaa0/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfM192My5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTUzNn1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1536w, https://eiko.ai/eiko/meero/SzEWzbovxpoCAOO-OVbziGuyGcU/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfM192My5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTYwMH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1600w, https://eiko.ai/eiko/meero/LrMAA0KwTGMJSMCJICOLNfXaUs4/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfM192My5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTkyMH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1920w" sizes="100vw" alt="Brand consistency">
+                <h1 class="platform text-4xl font-bold text-gray-800">
+                    Brand consistency
+                  </h1>
+                  <hr class="line w-full h-1bg-gray-400 lg:hidden md:hidden xl:hidden"/>
+                  <h2 class="syb text-2xl text-gray-600 mt-6 ml-24 mr-24 text-center">We guarantee consistency at any scale with our cutting edge AI and world-class editing by our in-house team.</h2>
+               </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div class="section4-full w-full mt-10 hidden xl:block lg:block md:block flex overflow-hidden">
+    
+        <div class="hiding hidden xl:flex separate absolute w-4/12 h-64 flex items-center">
+            <div class="first bg-teal-600 pt-3 text-white text-center w-40 h-12 rounded-full hover:shadow-xl">
+                Join us
+            </div>
+            <div class="ml-6 second pt-3 w-48 h-12 rounded-full border-2 border-teal-600  text-center text-teal-600">
+                Contact us
+            </div>
+            
+        </div>
+
+        <div class="p-10 light-text">
+            <h1 class="text-5xl font-bold text-teal-600 text-center">Lightning-fast visual production at any scale</h1>
+        </div>
+
+        <div class="carousel" data-flickity='{"wrapAround":true,"autoPlay":3000 }'>
+    
+            <div class="firstpic w-full flex flex-col items-center justify-center">
+                <h1 class="platform text-4xl font-bold text-gray-800">
+                    Meero platform
+                </h1> 
+                <div class="change flex w-full">
+                <img class="h-12/12 w-6/12" src="https://eiko.ai/eiko/meero/rpb7E3a6nlp7U8xKW0duZt0k-R4/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMV92Mi5wbmciXX0sIm9wZXJhdGlvbnMiOltdLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ==" srcset="https://eiko.ai/eiko/meero/Yt2KfNQ1ogCeVMaM9aRENsOgqIo/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMV92Mi5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MzIwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 320w, https://eiko.ai/eiko/meero/zE5O2QDtx9wy0tq_vUtBdYIKp4U/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMV92Mi5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6NjQwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 640w, https://eiko.ai/eiko/meero/tWNj3LamNFuAlXuCLAlnaUivkl0/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMV92Mi5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6NzY4fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 768w, https://eiko.ai/eiko/meero/GNN2LHpnl3nYK-o2OsMcI4U0xc8/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMV92Mi5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTAyNH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1024w, https://eiko.ai/eiko/meero/HM6OlLvwpE7PkLf3W7e9eRtBOrA/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMV92Mi5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTM2Nn1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1366w, https://eiko.ai/eiko/meero/JW40Vg8F5absQBKbSh5oT4U19hU/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMV92Mi5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTUzNn1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1536w, https://eiko.ai/eiko/meero/lGdrph_69VIFeX46_Gp18hKTwYw/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMV92Mi5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTYwMH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1600w, https://eiko.ai/eiko/meero/7_4V63gNa0UvO77W1Kh-VKRUoYk/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMV92Mi5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTkyMH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1920w" sizes="100vw" alt="Meero platform">              
+                <h2 class="syb text-2xl text-gray-600 mt-6 ml-24 mr-24 text-center">Order shoots and download ready-to-publish visuals in just a few clicks</h2>
+            </div>
+            </div>
+
+            <div class="firstpic w-full flex flex-col items-center justify-center">
+                <h1 class="platform text-4xl font-bold text-gray-800">
+                    Content production
+                </h1> 
+                <div class="change flex w-full">
+                <img class="h-12/12 w-6/12" src="https://eiko.ai/eiko/meero/lbyapFVIAwhPLg7Rde28E-qnaD8/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMl92My5wbmciXX0sIm9wZXJhdGlvbnMiOltdLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ==" srcset="https://eiko.ai/eiko/meero/tGjtDSgaDYH2ZEZJcprk0KYbTi0/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMl92My5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MzIwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 320w, https://eiko.ai/eiko/meero/DxDDDwv8vAw5Jpxy1_k3yVB93z4/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMl92My5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6NjQwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 640w, https://eiko.ai/eiko/meero/n6W56YCcKc0DRr1WkmFD2-QKMOI/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMl92My5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6NzY4fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 768w, https://eiko.ai/eiko/meero/9XHFDykU4ywkX1lapalMEgmnmdI/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMl92My5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTAyNH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1024w, https://eiko.ai/eiko/meero/VzAt2iTkrFHj1k6Z4um3eJkSoGE/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMl92My5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTM2Nn1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1366w, https://eiko.ai/eiko/meero/2o65liz4-Sv2GMsonOr8JlzpbrQ/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMl92My5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTUzNn1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1536w, https://eiko.ai/eiko/meero/JEfHevBUGAntebPRJYPFO8kxExY/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMl92My5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTYwMH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1600w, https://eiko.ai/eiko/meero/XvVkmQD07OjdjyJnEw7LUXoeb6Q/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfMl92My5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTkyMH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1920w" sizes="100vw" alt="Content production">                <h1 class="platform text-4xl font-bold text-gray-800">
+                <h2 class="syb text-2xl text-gray-600 mt-6 ml-24 mr-24 text-center">Shoots performed by 60K vetted photographers and managed by our 120 person in-house production team.</h2>
+            </div>
+            </div>
+
+            <div class="firstpic w-full flex flex-col items-center justify-center">
+                <h1 class="platform text-4xl font-bold text-gray-800">
+                    Brand consistency
+                </h1> 
+                <div class="change flex w-full">
+                <img class="h-12/12 w-6/12" src="https://eiko.ai/eiko/meero/AeisvY0BXkdOab3mxt1Pl-DRFyI/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfM192My5wbmciXX0sIm9wZXJhdGlvbnMiOltdLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ==" srcset="https://eiko.ai/eiko/meero/9M0GREQffcbg_IWWRAE2PP6NcWc/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfM192My5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MzIwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 320w, https://eiko.ai/eiko/meero/yOw_3oVbCH9D-M2vDqdKkzxxx-o/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfM192My5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6NjQwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 640w, https://eiko.ai/eiko/meero/4d6yRrJHKM0stx5zFE2YnkRDU9E/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfM192My5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6NzY4fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 768w, https://eiko.ai/eiko/meero/u5_8zbzzx_KDhSx_IXPaRZmAGYk/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfM192My5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTAyNH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1024w, https://eiko.ai/eiko/meero/Nv_HTV0Hs1llEBdpJrYpwwK5WOY/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfM192My5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTM2Nn1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1366w, https://eiko.ai/eiko/meero/cViYeqG7cARV54SPI3YWiKgYaa0/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfM192My5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTUzNn1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1536w, https://eiko.ai/eiko/meero/SzEWzbovxpoCAOO-OVbziGuyGcU/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfM192My5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTYwMH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1600w, https://eiko.ai/eiko/meero/LrMAA0KwTGMJSMCJICOLNfXaUs4/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvcGxhdGZvcm1cL2ZlYXR1cmVfM192My5wbmciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTkyMH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1920w" sizes="100vw" alt="Brand consistency">
+                 <h2 class="syb text-2xl text-gray-600 mt-6 ml-24 mr-24 text-center">We guarantee consistency at any scale with our cutting edge AI and world-class editing by our in-house team.</h2>
+            </div>
+            </div>
+
+            </div>
+        </div>
+
+
+    <div class="joinus mt-4 w-full flex justify-center">
+        <div class="joinbutton mt-10 pt-3 text-white text-center w-40 h-12 rounded-full hover:shadow-xl lg:hidden xl:hidden">
+            Join us
+        </div>
+    </div>
+
+
+
+    <div class="image-section mt-10 flex flex-col items-center overflow-hidden">
+        <div class="headingg mt-10 w-full font-extrabold">
+            <h1 class="text-4xl text-center text-gray-700 pr-8 pl-8"> <span class="text-teal-600"> Your business needs images </span> We’re in the business of bringing you the best of them</h1>
+        </div>
+        <div class="orderbutton mt-10 mb-6 pt-3 text-white text-center w-7/12 h-12 rounded-full hover:shadow-xl lg:w-2/12 md:w-4/12 xl:w-2/12">
+            Order a photoshoot now
+        </div>
+
+
+
+        <div class="display-options w-full plattes mt-4 lg:hidden md:hidden xl:hidden">
+            <div class="cou carousel" data-flickity='{"wrapAround":true,"autoPlay":3000 }'>
+            
+                    <div class="firstplate mr-24 ml-24 rounded-lg flex flex-col items-center border-2 border-yellow-400">
+                        <img class="object-cover object-center rounded-lg" src="https://eiko.ai/eiko/meero/qE2ab0m-PV8YmZxh53IswoV4-0Y/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2Zvb2QuanBnIl19LCJvcGVyYXRpb25zIjpbXSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0=" srcset="https://eiko.ai/eiko/meero/TCga3cfcIXwFzoztgbtyw4F-4dA/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2Zvb2QuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjMyMH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 320w, https://eiko.ai/eiko/meero/3MHU8YYxaBBF1Cl7_Q1i3e1n17s/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2Zvb2QuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjY0MH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 640w, https://eiko.ai/eiko/meero/CONGtzHD6VaEs-MMwiokrzAfHnE/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2Zvb2QuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjc2OH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 768w, https://eiko.ai/eiko/meero/4elOk08vMSqherfODRsWYX0bcmg/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2Zvb2QuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjEwMjR9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1024w, https://eiko.ai/eiko/meero/XN_jO4q3LW4OAymYtpiF47vFRDg/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2Zvb2QuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjEzNjZ9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1366w, https://eiko.ai/eiko/meero/Qof6mTW77rpTsBoM2ArdG6utWXw/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2Zvb2QuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjE1MzZ9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1536w, https://eiko.ai/eiko/meero/NGzWzD_Pl8KZ1M4P-N4bB7elHq8/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2Zvb2QuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjE2MDB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1600w, https://eiko.ai/eiko/meero/nKO0BpigvBXOuKrKTHxrSprHWMo/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2Zvb2QuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjE5MjB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1920w" sizes="(max-width: 70rem) 50vw, (max-width: 100rem) 40vw, 20vw" alt="Food photography">                      
+                      <div class="tags flex flex-col" >
+                          <h1 class="mt-5 text-4xl w-full self-center flex justify-center font-bold">Food</h1>
+                          <div class="tagsbutton mb-6 mt-2 bg-red-100 pt-2 pr-6 pl-6 text-teal-600 font-bold text-center h-10 rounded-full hover:shadow-xl lg:hidden xl:hidden">
+                            Photo
+                        </div>
+                      </div> 
+                    </div>
+
+                    <div class="firstplate mr-24 ml-24 rounded-lg flex flex-col items-center border-2 border-yellow-400">
+                       <img class="object-cover object-center rounded-lg" src="https://eiko.ai/eiko/meero/zEZU3TyY9LRDA0VKKjVzmGcIueY/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3BvcnRyYWl0LmpwZyJdfSwib3BlcmF0aW9ucyI6W10sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19" srcset="https://eiko.ai/eiko/meero/U9k62iPdYu1BHAmwgiKHDD7aOxg/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3BvcnRyYWl0LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjozMjB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 320w, https://eiko.ai/eiko/meero/bTtyYGwUZcnMf2J682LM-RCrly4/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3BvcnRyYWl0LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjo2NDB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 640w, https://eiko.ai/eiko/meero/_5KTzdtcDmBNVBQ2P5GZv-D-bk0/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3BvcnRyYWl0LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjo3Njh9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 768w, https://eiko.ai/eiko/meero/jQQiDlBooiotQGR_v6l95Rhdrd0/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3BvcnRyYWl0LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxMDI0fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1024w, https://eiko.ai/eiko/meero/P24hNBL53jGGo9Io-MfHpIUbE9Q/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3BvcnRyYWl0LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxMzY2fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1366w, https://eiko.ai/eiko/meero/HWMhJEAe_yKhwllxqr6uODUHGug/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3BvcnRyYWl0LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxNTM2fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1536w, https://eiko.ai/eiko/meero/1Ksp0tmlyMDOhD6OBATnbUohXyM/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3BvcnRyYWl0LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxNjAwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1600w, https://eiko.ai/eiko/meero/CIS235Gfa-PU0ApBgbbHPc6Z0Ew/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3BvcnRyYWl0LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxOTIwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1920w" sizes="(max-width: 70rem) 50vw, (max-width: 100rem) 40vw, 20vw" alt="Corporate photography">                
+                       <div class="tags flex flex-col" >
+                        <h1 class="mt-5 text-4xl w-full self-center flex justify-center font-bold">Portrait</h1>
+                        <div class="tagsbutton mb-6 mt-2 bg-red-100 pt-2 pr-6 pl-6 text-teal-600 font-bold text-center h-10 rounded-full hover:shadow-xl lg:hidden xl:hidden">
+                          Photo
+                      </div>
+                    </div> 
+                    </div>
+                        
+                    <div class="firstplate mr-24 ml-24 rounded-lg flex flex-col items-center border-2 border-yellow-400">
+                        <img class="object-cover object-center rounded-lg" src="https://eiko.ai/eiko/meero/gTZ3G2_-pPk1zrTJPnRsspWwKJk/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3JlYWwtZXN0YXRlLmpwZyJdfSwib3BlcmF0aW9ucyI6W10sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19" srcset="https://eiko.ai/eiko/meero/5zw2O-Eue-2SkmUV8oyhOiNoWXc/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3JlYWwtZXN0YXRlLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjozMjB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 320w, https://eiko.ai/eiko/meero/cxnm3UrrH8CO83mrx8FVHP2wkbo/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3JlYWwtZXN0YXRlLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjo2NDB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 640w, https://eiko.ai/eiko/meero/fZVqIdy84GDutcCZ67z1M8PYIBs/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3JlYWwtZXN0YXRlLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjo3Njh9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 768w, https://eiko.ai/eiko/meero/oy5i9V_GDoWgh_in6aILRMgC9YY/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3JlYWwtZXN0YXRlLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxMDI0fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1024w, https://eiko.ai/eiko/meero/u0akbkJfQlu78--P3fGaSWIz4wI/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3JlYWwtZXN0YXRlLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxMzY2fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1366w, https://eiko.ai/eiko/meero/iJrhSknoxSC5tnU5jc3pucUbvoM/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3JlYWwtZXN0YXRlLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxNTM2fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1536w, https://eiko.ai/eiko/meero/eDPZk2xgPvYTZev8pjEpXeAyZy0/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3JlYWwtZXN0YXRlLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxNjAwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1600w, https://eiko.ai/eiko/meero/eE-Jpr1QzCyjRrnCBw-yh8WEQpI/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3JlYWwtZXN0YXRlLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxOTIwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1920w" sizes="(max-width: 70rem) 50vw, (max-width: 100rem) 40vw, 20vw" alt="Real estate photography">                    
+                        <div class="tags flex flex-col" >
+                            <h1 class="mt-5 text-4xl w-full self-center flex justify-center font-bold">Real Estate</h1>
+                            <div class="butto flex justify-around">
+                                <div class="tagsbutton mr-2 mb-6 mt-2 bg-red-100 pt-2 pr-6 pl-6 text-teal-600 font-bold text-center h-10 rounded-full hover:shadow-xl lg:hidden xl:hidden">
+                                  Photo
+                              </div>
+                              <div class="tagsbutton mb-6 ml-2 mt-2 bg-blue-100 pt-2 pr-6 pl-6 text-teal-600 font-bold text-center h-10 rounded-full hover:shadow-xl lg:hidden xl:hidden">
+                                Video
+                            </div>
+                            <div class="tagsbutton mb-6 ml-2 mt-2 bg-orange-100 pt-2 pr-6 pl-6 text-teal-600 font-bold text-center h-10 rounded-full hover:shadow-xl lg:hidden xl:hidden">
+                                360VR
+                            </div>
+                            </div>
+                        </div> 
+                    </div>
+
+
+                    <div class="firstplate mr-24 ml-24 rounded-lg flex flex-col items-center border-2 border-yellow-400">
+                            <img class="object-cover object-center rounded-lg" src="https://eiko.ai/eiko/meero/_tLIHzhDKEeujxCc2-KDXe_FvoE/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2xpZmVzdHlsZS5qcGciXX0sIm9wZXJhdGlvbnMiOltdLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ==" srcset="https://eiko.ai/eiko/meero/cy4dMqk_5I3skenCvLjXm4b5J9o/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2xpZmVzdHlsZS5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MzIwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 320w, https://eiko.ai/eiko/meero/SuJ2vICtC341N0xuCrVyp0hwsuM/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2xpZmVzdHlsZS5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6NjQwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 640w, https://eiko.ai/eiko/meero/42sDVerBEEBM-2h2Qj7sOPtoA5Q/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2xpZmVzdHlsZS5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6NzY4fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 768w, https://eiko.ai/eiko/meero/MRYawzrL8eSbr6gp8Sr6KhNjGHo/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2xpZmVzdHlsZS5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTAyNH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1024w, https://eiko.ai/eiko/meero/DZnCAN01pDIC5XTnBvxk0VXP7x0/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2xpZmVzdHlsZS5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTM2Nn1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1366w, https://eiko.ai/eiko/meero/AD2wMaEE1sEGXIaoBPGwHP76fDg/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2xpZmVzdHlsZS5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTUzNn1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1536w, https://eiko.ai/eiko/meero/HPA2HyAu4ujqA8qkjC3QapJ61oY/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2xpZmVzdHlsZS5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTYwMH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1600w, https://eiko.ai/eiko/meero/-WESYfdi7iu1Lwclf3KB25ih828/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2xpZmVzdHlsZS5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTkyMH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1920w" sizes="(max-width: 70rem) 50vw, (max-width: 100rem) 40vw, 20vw" alt="Lifestyle photography">
+                            <div class="tags flex flex-col" >
+                                <h1 class="mt-5 text-4xl w-full self-center flex justify-center font-bold">Lifestyle</h1>
+                               <div class="butto flex justify-around">
+                                <div class="tagsbutton mr-2 mb-6 mt-2 bg-red-100 pt-2 pr-6 pl-6 text-teal-600 font-bold text-center h-10 rounded-full hover:shadow-xl lg:hidden xl:hidden">
+                                  Photo
+                              </div>
+                              <div class="tagsbutton mb-6 ml-2 mt-2 bg-blue-100 pt-2 pr-6 pl-6 text-teal-600 font-bold text-center h-10 rounded-full hover:shadow-xl lg:hidden xl:hidden">
+                                Video
+                            </div>
+                            </div>
+                            </div> 
+                        </div>
+
+
+                    <div class="firstplate mr-24 ml-24 rounded-lg flex flex-col items-center border-2 border-yellow-400">
+                        <img class="object-cover object-center rounded-lg" src="https://eiko.ai/eiko/meero/AAUm8BANLE-34kPAYpd1lzp4irY/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2UtY29tbWVyY2UyLmpwZyJdfSwib3BlcmF0aW9ucyI6W10sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19" srcset="https://eiko.ai/eiko/meero/9s5iEpP41AM2VhcH1VE3JYpA_qk/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2UtY29tbWVyY2UyLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjozMjB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 320w, https://eiko.ai/eiko/meero/ZDTk9nlkLKAH9gcBdKiqT_qyzj8/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2UtY29tbWVyY2UyLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjo2NDB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 640w, https://eiko.ai/eiko/meero/MoI_DMFYcLAYpV_2VxthKx8QECc/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2UtY29tbWVyY2UyLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjo3Njh9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 768w, https://eiko.ai/eiko/meero/nGKfBtP8SeEnw-znC962BXtXYLw/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2UtY29tbWVyY2UyLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxMDI0fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1024w, https://eiko.ai/eiko/meero/Hu1KfWIHAfn5s6izfUXNHSSivvk/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2UtY29tbWVyY2UyLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxMzY2fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1366w, https://eiko.ai/eiko/meero/9ttTEORH5tOJqb-Y2P44Zd8Cfog/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2UtY29tbWVyY2UyLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxNTM2fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1536w, https://eiko.ai/eiko/meero/Jf0mZ4ArIR85lgcKkJ_nEG4mbsw/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2UtY29tbWVyY2UyLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxNjAwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1600w, https://eiko.ai/eiko/meero/lqXX3XEkUhKjZ8OdUE0F2hf9lgA/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2UtY29tbWVyY2UyLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxOTIwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1920w" sizes="(max-width: 70rem) 50vw, (max-width: 100rem) 40vw, 20vw" alt="Product photography">
+                        <div class="tags flex flex-col" >
+                            <h1 class="mt-5 text-4xl w-full self-center flex justify-center font-bold">E-commerce</h1>
+                            <div class="tagsbutton mb-6 mt-2 bg-red-100 pt-2 pr-6 pl-6 text-teal-600 font-bold text-center h-10 rounded-full hover:shadow-xl lg:hidden xl:hidden">
+                              Photo
+                          </div>
+                        </div> 
+                    </div>
+
+
+                    <div class="firstplate mr-24 ml-24 rounded-lg flex flex-col items-center border-2 border-yellow-400">
+                        <img class="object-cover object-center rounded-lg" src="https://eiko.ai/eiko/meero/_yErIMTJHJ2AWb6x5YIT77A70fE/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2V2ZW50LmpwZyJdfSwib3BlcmF0aW9ucyI6W10sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19" srcset="https://eiko.ai/eiko/meero/aVHeNlBFtRZWvmHc9AW_D_jQjFM/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2V2ZW50LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjozMjB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 320w, https://eiko.ai/eiko/meero/FbG-DEKPxHa6YSlbDEhqhm8OClU/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2V2ZW50LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjo2NDB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 640w, https://eiko.ai/eiko/meero/jawVDXnH8WWHrgyvLcLqDXNExeY/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2V2ZW50LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjo3Njh9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 768w, https://eiko.ai/eiko/meero/wIoEBQZyXLJnnGEK85eS8XGKKS8/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2V2ZW50LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxMDI0fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1024w, https://eiko.ai/eiko/meero/VSIw2GnMCIqqbtDd-Ins-E3n-6E/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2V2ZW50LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxMzY2fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1366w, https://eiko.ai/eiko/meero/GY9Yb-IhjALnuY2q4popoOZD43M/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2V2ZW50LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxNTM2fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1536w, https://eiko.ai/eiko/meero/fqOR3nNOoe1HLbazNHDe6pTJ_BE/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2V2ZW50LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxNjAwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1600w, https://eiko.ai/eiko/meero/vdJOZFiWPm7_ngAq1oQxOf0ZH9A/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2V2ZW50LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxOTIwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1920w" sizes="(max-width: 70rem) 50vw, (max-width: 100rem) 40vw, 20vw" alt="Event photography">
+                        <div class="tags flex flex-col" >
+                            <h1 class="mt-5 text-4xl w-full self-center flex justify-center font-bold">Event</h1>
+                            <div class="butto flex justify-around">
+                                <div class="tagsbutton mr-2 mb-6 mt-2 bg-red-100 pt-2 pr-6 pl-6 text-teal-600 font-bold text-center h-10 rounded-full hover:shadow-xl lg:hidden xl:hidden">
+                                  Photo
+                              </div>
+                              <div class="tagsbutton mb-6 ml-2 mt-2 bg-blue-100 pt-2 pr-6 pl-6 text-teal-600 font-bold text-center h-10 rounded-full hover:shadow-xl lg:hidden xl:hidden">
+                                Video
+                            </div>
+                            </div>
+                        </div> 
+                    </div>
+            </div>
+        </div>
+
+
+        <div class="display-options-large h-auto plattes mt-4 hidden lg:grid md:grid md:grid-cols-2 md:grid-rows-3  xl:grid xl:grid-cols-3  xl:grid-rows-2 lg:grid-cols-2 lg:grid-rows-3  lg:mb-10 xl:mb-10 md:mb-10 md:h-auto lg:h-auto xl:h-auto">
+            
+                    <div class="firstplate mr-12 ml-12 rounded-lg flex flex-col items-center border-2 border-yellow-400 md:mt-8">
+                        <img class="object-cover object-center rounded-lg" src="https://eiko.ai/eiko/meero/qE2ab0m-PV8YmZxh53IswoV4-0Y/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2Zvb2QuanBnIl19LCJvcGVyYXRpb25zIjpbXSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0=" srcset="https://eiko.ai/eiko/meero/TCga3cfcIXwFzoztgbtyw4F-4dA/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2Zvb2QuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjMyMH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 320w, https://eiko.ai/eiko/meero/3MHU8YYxaBBF1Cl7_Q1i3e1n17s/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2Zvb2QuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjY0MH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 640w, https://eiko.ai/eiko/meero/CONGtzHD6VaEs-MMwiokrzAfHnE/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2Zvb2QuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjc2OH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 768w, https://eiko.ai/eiko/meero/4elOk08vMSqherfODRsWYX0bcmg/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2Zvb2QuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjEwMjR9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1024w, https://eiko.ai/eiko/meero/XN_jO4q3LW4OAymYtpiF47vFRDg/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2Zvb2QuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjEzNjZ9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1366w, https://eiko.ai/eiko/meero/Qof6mTW77rpTsBoM2ArdG6utWXw/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2Zvb2QuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjE1MzZ9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1536w, https://eiko.ai/eiko/meero/NGzWzD_Pl8KZ1M4P-N4bB7elHq8/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2Zvb2QuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjE2MDB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1600w, https://eiko.ai/eiko/meero/nKO0BpigvBXOuKrKTHxrSprHWMo/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2Zvb2QuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjE5MjB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1920w" sizes="(max-width: 70rem) 50vw, (max-width: 100rem) 40vw, 20vw" alt="Food photography">                      
+                      <div class="tags flex flex-col" >
+                          <h1 class="mt-5 text-4xl w-full self-center flex justify-center font-bold">Food</h1>
+                          <div class="tagsbutton mb-6 mt-2 bg-red-100 pt-2 pr-6 pl-6 text-teal-600 font-bold text-center h-10 rounded-full hover:shadow-xl ">
+                            Photo
+                        </div>
+                      </div> 
+                    </div>
+
+                    <div class="firstplate mr-12 xl:mt-16  ml-12 rounded-lg flex flex-col items-center border-2 border-yellow-400 md:mt-8">
+                       <img class="object-cover object-center rounded-lg" src="https://eiko.ai/eiko/meero/zEZU3TyY9LRDA0VKKjVzmGcIueY/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3BvcnRyYWl0LmpwZyJdfSwib3BlcmF0aW9ucyI6W10sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19" srcset="https://eiko.ai/eiko/meero/U9k62iPdYu1BHAmwgiKHDD7aOxg/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3BvcnRyYWl0LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjozMjB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 320w, https://eiko.ai/eiko/meero/bTtyYGwUZcnMf2J682LM-RCrly4/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3BvcnRyYWl0LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjo2NDB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 640w, https://eiko.ai/eiko/meero/_5KTzdtcDmBNVBQ2P5GZv-D-bk0/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3BvcnRyYWl0LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjo3Njh9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 768w, https://eiko.ai/eiko/meero/jQQiDlBooiotQGR_v6l95Rhdrd0/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3BvcnRyYWl0LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxMDI0fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1024w, https://eiko.ai/eiko/meero/P24hNBL53jGGo9Io-MfHpIUbE9Q/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3BvcnRyYWl0LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxMzY2fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1366w, https://eiko.ai/eiko/meero/HWMhJEAe_yKhwllxqr6uODUHGug/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3BvcnRyYWl0LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxNTM2fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1536w, https://eiko.ai/eiko/meero/1Ksp0tmlyMDOhD6OBATnbUohXyM/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3BvcnRyYWl0LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxNjAwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1600w, https://eiko.ai/eiko/meero/CIS235Gfa-PU0ApBgbbHPc6Z0Ew/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3BvcnRyYWl0LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxOTIwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1920w" sizes="(max-width: 70rem) 50vw, (max-width: 100rem) 40vw, 20vw" alt="Corporate photography">                
+                       <div class="tags flex flex-col" >
+                        <h1 class="mt-5 text-4xl w-full self-center flex justify-center font-bold">Portrait</h1>
+                        <div class="tagsbutton mb-6 mt-2 bg-red-100 pt-2 pr-6 pl-6 text-teal-600 font-bold text-center h-10 rounded-full hover:shadow-xl">
+                          Photo
+                      </div>
+                    </div> 
+                    </div>
+                        
+                    <div class="firstplate mr-12 ml-12 rounded-lg flex flex-col items-center border-2 border-yellow-400 md:mt-8">
+                        <img class="object-cover object-center rounded-lg" src="https://eiko.ai/eiko/meero/gTZ3G2_-pPk1zrTJPnRsspWwKJk/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3JlYWwtZXN0YXRlLmpwZyJdfSwib3BlcmF0aW9ucyI6W10sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19" srcset="https://eiko.ai/eiko/meero/5zw2O-Eue-2SkmUV8oyhOiNoWXc/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3JlYWwtZXN0YXRlLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjozMjB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 320w, https://eiko.ai/eiko/meero/cxnm3UrrH8CO83mrx8FVHP2wkbo/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3JlYWwtZXN0YXRlLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjo2NDB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 640w, https://eiko.ai/eiko/meero/fZVqIdy84GDutcCZ67z1M8PYIBs/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3JlYWwtZXN0YXRlLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjo3Njh9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 768w, https://eiko.ai/eiko/meero/oy5i9V_GDoWgh_in6aILRMgC9YY/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3JlYWwtZXN0YXRlLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxMDI0fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1024w, https://eiko.ai/eiko/meero/u0akbkJfQlu78--P3fGaSWIz4wI/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3JlYWwtZXN0YXRlLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxMzY2fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1366w, https://eiko.ai/eiko/meero/iJrhSknoxSC5tnU5jc3pucUbvoM/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3JlYWwtZXN0YXRlLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxNTM2fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1536w, https://eiko.ai/eiko/meero/eDPZk2xgPvYTZev8pjEpXeAyZy0/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3JlYWwtZXN0YXRlLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxNjAwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1600w, https://eiko.ai/eiko/meero/eE-Jpr1QzCyjRrnCBw-yh8WEQpI/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL3JlYWwtZXN0YXRlLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxOTIwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1920w" sizes="(max-width: 70rem) 50vw, (max-width: 100rem) 40vw, 20vw" alt="Real estate photography">                    
+                        <div class="tags flex flex-col" >
+                            <h1 class="mt-5 text-4xl w-full self-center flex justify-center font-bold">Real Estate</h1>
+                            <div class="butto flex justify-around">
+                                <div class="tagsbutton mr-2 mb-6 mt-2 bg-red-100 pt-2 pr-6 pl-6 text-teal-600 font-bold text-center h-10 rounded-full hover:shadow-xl ">
+                                  Photo
+                              </div>
+                              <div class="tagsbutton mb-6 ml-2 mt-2 bg-blue-100 pt-2 pr-6 pl-6 text-teal-600 font-bold text-center h-10 rounded-full hover:shadow-xl ">
+                                Video
+                            </div>
+                            <div class="tagsbutton mb-6 ml-2 mt-2 bg-orange-100 pt-2 pr-6 pl-6 text-teal-600 font-bold text-center h-10 rounded-full hover:shadow-xl ">
+                                360VR
+                            </div>
+                            </div>
+                        </div> 
+                    </div>
+
+
+                    <div class="firstplate mr-12 ml-12 rounded-lg flex flex-col items-center border-2 border-yellow-400 md:mt-8">
+                            <img class="object-cover object-center rounded-lg" src="https://eiko.ai/eiko/meero/_tLIHzhDKEeujxCc2-KDXe_FvoE/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2xpZmVzdHlsZS5qcGciXX0sIm9wZXJhdGlvbnMiOltdLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ==" srcset="https://eiko.ai/eiko/meero/cy4dMqk_5I3skenCvLjXm4b5J9o/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2xpZmVzdHlsZS5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MzIwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 320w, https://eiko.ai/eiko/meero/SuJ2vICtC341N0xuCrVyp0hwsuM/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2xpZmVzdHlsZS5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6NjQwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 640w, https://eiko.ai/eiko/meero/42sDVerBEEBM-2h2Qj7sOPtoA5Q/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2xpZmVzdHlsZS5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6NzY4fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 768w, https://eiko.ai/eiko/meero/MRYawzrL8eSbr6gp8Sr6KhNjGHo/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2xpZmVzdHlsZS5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTAyNH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1024w, https://eiko.ai/eiko/meero/DZnCAN01pDIC5XTnBvxk0VXP7x0/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2xpZmVzdHlsZS5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTM2Nn1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1366w, https://eiko.ai/eiko/meero/AD2wMaEE1sEGXIaoBPGwHP76fDg/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2xpZmVzdHlsZS5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTUzNn1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1536w, https://eiko.ai/eiko/meero/HPA2HyAu4ujqA8qkjC3QapJ61oY/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2xpZmVzdHlsZS5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTYwMH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1600w, https://eiko.ai/eiko/meero/-WESYfdi7iu1Lwclf3KB25ih828/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2xpZmVzdHlsZS5qcGciXX0sIm9wZXJhdGlvbnMiOlt7InR5cGUiOiJyZXNpemUiLCJ3aWR0aCI6MTkyMH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 1920w" sizes="(max-width: 70rem) 50vw, (max-width: 100rem) 40vw, 20vw" alt="Lifestyle photography">
+                            <div class="tags flex flex-col" >
+                                <h1 class="mt-5 text-4xl w-full self-center flex justify-center font-bold">Lifestyle</h1>
+                               <div class="butto flex justify-around">
+                                <div class="tagsbutton mr-2 mb-6 mt-2 bg-red-100 pt-2 pr-6 pl-6 text-teal-600 font-bold text-center h-10 rounded-full hover:shadow-xl ">
+                                  Photo
+                              </div>
+                              <div class="tagsbutton mb-6 ml-2 mt-2 bg-blue-100 pt-2 pr-6 pl-6 text-teal-600 font-bold text-center h-10 rounded-full hover:shadow-xl">
+                                Video
+                            </div>
+                            </div>
+                            </div> 
+                        </div>
+
+
+                    <div class="firstplate mr-12 xl:mt-16 ml-12 rounded-lg flex flex-col items-center border-2 border-yellow-400 md:mt-8">
+                        <img class="object-cover object-center rounded-lg " src="https://eiko.ai/eiko/meero/AAUm8BANLE-34kPAYpd1lzp4irY/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2UtY29tbWVyY2UyLmpwZyJdfSwib3BlcmF0aW9ucyI6W10sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19" srcset="https://eiko.ai/eiko/meero/9s5iEpP41AM2VhcH1VE3JYpA_qk/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2UtY29tbWVyY2UyLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjozMjB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 320w, https://eiko.ai/eiko/meero/ZDTk9nlkLKAH9gcBdKiqT_qyzj8/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2UtY29tbWVyY2UyLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjo2NDB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 640w, https://eiko.ai/eiko/meero/MoI_DMFYcLAYpV_2VxthKx8QECc/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2UtY29tbWVyY2UyLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjo3Njh9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 768w, https://eiko.ai/eiko/meero/nGKfBtP8SeEnw-znC962BXtXYLw/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2UtY29tbWVyY2UyLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxMDI0fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1024w, https://eiko.ai/eiko/meero/Hu1KfWIHAfn5s6izfUXNHSSivvk/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2UtY29tbWVyY2UyLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxMzY2fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1366w, https://eiko.ai/eiko/meero/9ttTEORH5tOJqb-Y2P44Zd8Cfog/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2UtY29tbWVyY2UyLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxNTM2fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1536w, https://eiko.ai/eiko/meero/Jf0mZ4ArIR85lgcKkJ_nEG4mbsw/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2UtY29tbWVyY2UyLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxNjAwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1600w, https://eiko.ai/eiko/meero/lqXX3XEkUhKjZ8OdUE0F2hf9lgA/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2UtY29tbWVyY2UyLmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxOTIwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1920w" sizes="(max-width: 70rem) 50vw, (max-width: 100rem) 40vw, 20vw" alt="Product photography">
+                        <div class="tags flex flex-col" >
+                            <h1 class="mt-5 text-4xl w-full self-center flex justify-center font-bold">E-commerce</h1>
+                            <div class="tagsbutton mb-6 mt-2 bg-red-100 pt-2 pr-6 pl-6 text-teal-600 font-bold text-center h-10 rounded-full hover:shadow-xl">
+                              Photo
+                          </div>
+                        </div> 
+                    </div>
+
+
+                    <div class="firstplate mr-12 ml-12 rounded-lg flex flex-col items-center border-2 border-yellow-400 md:mt-8">
+                        <img class="object-cover object-center rounded-lg" src="https://eiko.ai/eiko/meero/_yErIMTJHJ2AWb6x5YIT77A70fE/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2V2ZW50LmpwZyJdfSwib3BlcmF0aW9ucyI6W10sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19" srcset="https://eiko.ai/eiko/meero/aVHeNlBFtRZWvmHc9AW_D_jQjFM/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2V2ZW50LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjozMjB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 320w, https://eiko.ai/eiko/meero/FbG-DEKPxHa6YSlbDEhqhm8OClU/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2V2ZW50LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjo2NDB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 640w, https://eiko.ai/eiko/meero/jawVDXnH8WWHrgyvLcLqDXNExeY/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2V2ZW50LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjo3Njh9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 768w, https://eiko.ai/eiko/meero/wIoEBQZyXLJnnGEK85eS8XGKKS8/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2V2ZW50LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxMDI0fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1024w, https://eiko.ai/eiko/meero/VSIw2GnMCIqqbtDd-Ins-E3n-6E/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2V2ZW50LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxMzY2fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1366w, https://eiko.ai/eiko/meero/GY9Yb-IhjALnuY2q4popoOZD43M/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2V2ZW50LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxNTM2fV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1536w, https://eiko.ai/eiko/meero/fqOR3nNOoe1HLbazNHDe6pTJ_BE/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2V2ZW50LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxNjAwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1600w, https://eiko.ai/eiko/meero/vdJOZFiWPm7_ngAq1oQxOf0ZH9A/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvYnVzaW5lc3NcL2V2ZW50LmpwZyJdfSwib3BlcmF0aW9ucyI6W3sidHlwZSI6InJlc2l6ZSIsIndpZHRoIjoxOTIwfV0sIm91dHB1dCI6eyJxdWFsaXR5Ijo3MH19 1920w" sizes="(max-width: 70rem) 50vw, (max-width: 100rem) 40vw, 20vw" alt="Event photography">
+                        <div class="tags flex flex-col" >
+                            <h1 class="mt-5 text-4xl w-full self-center flex justify-center font-bold">Event</h1>
+                            <div class="butto flex justify-around">
+                                <div class="tagsbutton mr-2 mb-6 mt-2 bg-red-100 pt-2 pr-6 pl-6 text-teal-600 font-bold text-center h-10 rounded-full hover:shadow-xl">
+                                  Photo
+                              </div>
+                              <div class="tagsbutton mb-6 ml-2 mt-2 bg-blue-100 pt-2 pr-6 pl-6 text-teal-600 font-bold text-center h-10 rounded-full hover:shadow-xl">
+                                Video
+                            </div>
+                            </div>
+                        </div> 
+                    </div>
+            </div>
+        
+    </div>
+
+
+
+
+
+    <div class=" mt-2 mobile-view flex flex-col items-center lg:hidden xl:hidden md:hidden">
+        <img class="mobile w-8/12" src="https://eiko.ai/eiko/meero/tO9ygGC0t7oDNeZ1jXMFKCJrbos/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTm1vYmlsZTEucG5nIl19LCJvcGVyYXRpb25zIjpbXSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0=" srcset="https://eiko.ai/eiko/meero/AF0tAlOSQ1FWZiKOXGKXJ_hzBwo/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTm1vYmlsZTEucG5nIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjMyMH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 320w, https://eiko.ai/eiko/meero/NcqCMvoLVC3h3jbOBcx06Pybsf4/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTm1vYmlsZTEucG5nIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjY0MH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 640w, https://eiko.ai/eiko/meero/vLBf2lgLXWUuLFZCt1GCxrhpu1c/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTm1vYmlsZTEucG5nIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjc2OH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 768w, https://eiko.ai/eiko/meero/z9A6ZKU6fbMid7dULweNj7ZR3Vo/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTm1vYmlsZTEucG5nIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjEwMjR9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1024w, https://eiko.ai/eiko/meero/QABaFpkXjmyNV3URcXWkiglP7Rs/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTm1vYmlsZTEucG5nIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjEzNjZ9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1366w, https://eiko.ai/eiko/meero/hP0162LJB0rUKNZrZzOmQyikKi4/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTm1vYmlsZTEucG5nIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjE1MzZ9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1536w, https://eiko.ai/eiko/meero/FoHGWYu6rsqNnlgVpESg3i6zJdM/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTm1vYmlsZTEucG5nIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjE2MDB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1600w, https://eiko.ai/eiko/meero/4lBT23VL5eTRiSF3v1NqA6ErJGk/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTm1vYmlsZTEucG5nIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjE5MjB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1920w" sizes="80vw" alt="Professional photographer">
+        <div class="content flex flex-col mt-8 mb-8">
+            <h2 class="title text-4xl text-center font-bold ">
+                Let us help bring your vision for your business to life
+            </h2>
+            <h2 class="self-center w-40 border-2 border-black pt-2 pb-2 pr-8 pl-8 mt-4 rounded-full">
+                Make it real
+            </h2>
+        </div>
+        <img class="mobile w-8/12" src="https://eiko.ai/eiko/meero/9SQv5-A2iUJdDFDDTcIwEvPndR4/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTm1vYmlsZTIuanBnIl19LCJvcGVyYXRpb25zIjpbXSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0=" srcset="https://eiko.ai/eiko/meero/a4VxgcdcVoWh4gk8k_6jmk5QR4Q/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTm1vYmlsZTIuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjMyMH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 320w, https://eiko.ai/eiko/meero/HWXE8k_rVVg5WDarm-yfWRV5vZs/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTm1vYmlsZTIuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjY0MH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 640w, https://eiko.ai/eiko/meero/vjsFT8QtVtc3d2xHD8e0NDUbWpQ/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTm1vYmlsZTIuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjc2OH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 768w, https://eiko.ai/eiko/meero/KRm-ED305ps6dVo9noqksZVbzZo/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTm1vYmlsZTIuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjEwMjR9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1024w, https://eiko.ai/eiko/meero/ikl4FMup6iMrQ3V6Jf2Hh8RRQjw/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTm1vYmlsZTIuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjEzNjZ9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1366w, https://eiko.ai/eiko/meero/6NSYt8b11RBPAPSEzVOYEm_j1Bw/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTm1vYmlsZTIuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjE1MzZ9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1536w, https://eiko.ai/eiko/meero/K_oVukDZYDhxJHu2MdPwsCwdiNI/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTm1vYmlsZTIuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjE2MDB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1600w, https://eiko.ai/eiko/meero/e6HszxeYiqwPhDYexSZEEdF-ZSA/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTm1vYmlsZTIuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjE5MjB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1920w" sizes="80vw" alt="Professional photographer">
+    </div>
+
+
+    <div class="large w-full hidden md:block lg:block xl:block flex flex-col ">
+        <div class="i w-full flex justify-center">
+            <img class="large" src="https://eiko.ai/eiko/meero/-D6HBIXWut3L5cbMEnwhYNBiCKQ/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTjEuanBnIl19LCJvcGVyYXRpb25zIjpbXSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0=" srcset="https://eiko.ai/eiko/meero/1c7iLnKhRIPQYhlLNbrqM-4e8u4/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTjEuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjMyMH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 320w, https://eiko.ai/eiko/meero/WTnfN3PKRh8ihjLOzsga0yZVx0Q/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTjEuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjY0MH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 640w, https://eiko.ai/eiko/meero/-kB24o0n1XO1NTHRGdt1HHgkn3k/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTjEuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjc2OH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 768w, https://eiko.ai/eiko/meero/flo9VK_2da98x2oey_C0NG1MGnY/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTjEuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjEwMjR9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1024w, https://eiko.ai/eiko/meero/25PlOifjAhYOpdzwH_n5rI20l3s/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTjEuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjEzNjZ9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1366w, https://eiko.ai/eiko/meero/6ROhBenjEZ5NUcRKvAivUlG4A6o/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTjEuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjE1MzZ9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1536w, https://eiko.ai/eiko/meero/9cOW-gQ6xo7t79gJc4QMAEYFD7U/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTjEuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjE2MDB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1600w, https://eiko.ai/eiko/meero/1ojbhbGj1LjzuyXzvWw8kw3Rj18/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTjEuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjE5MjB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1920w" sizes="40vw" alt="Professional photographer">
+        </div>  
+        <div class="content mr-6 ml-6 flex flex-col mt-8 mb-8 md:mr-4 md:ml-4">
+            <h2 class="title text-5xl text-center font-bold ">
+                Let us help bring your vision for your business to life
+            </h2>
+            <h2 class="self-center w-48 border-2 border-black pt-2 pb-2 pr-6 pl-12 mt-4 rounded-full text-xl">
+                Make it real
+            </h2>
+        </div>
+            <div class="i w-full flex justify-center">
+                <img class="large" src="https://eiko.ai/eiko/meero/VSsvWboGRKeI8vFA8c_rXpiHqlE/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTjIuanBnIl19LCJvcGVyYXRpb25zIjpbXSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0=" srcset="https://eiko.ai/eiko/meero/Hqvv3AIRmbP5ERkN046-On5BNB4/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTjIuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjMyMH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 320w, https://eiko.ai/eiko/meero/J2a_VYTI7IYa-NSvq2f8SBs9ZiM/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTjIuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjY0MH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 640w, https://eiko.ai/eiko/meero/lE9X1LagYfoAU62OVqzhf4Vg9yw/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTjIuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjc2OH1dLCJvdXRwdXQiOnsicXVhbGl0eSI6NzB9fQ== 768w, https://eiko.ai/eiko/meero/AlTXBnSVp8HigdXN9nxHTMD1PSs/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTjIuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjEwMjR9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1024w, https://eiko.ai/eiko/meero/DcZOLiAV2RKjgDI8qjM11uQYbVo/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTjIuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjEzNjZ9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1366w, https://eiko.ai/eiko/meero/c3RoZwGZFZy2u5CghWQpbAGXWmA/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTjIuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjE1MzZ9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1536w, https://eiko.ai/eiko/meero/wIveOTFnBhzVwBBQDs5u08HNAOk/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTjIuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjE2MDB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1600w, https://eiko.ai/eiko/meero/0qNna4h83l25vVTMhEC0obbpWf8/eyJpbnB1dCI6eyJzb3VyY2VzIjpbImh0dHBzOlwvXC9hc3NldHMubWVlcm8uY29tXC9tZWVyb3Nob3djYXNlXC9pbWFnZXNcL2Zyb250XC9WNVwvaG9tZXBhZ2VcL3Zpc2lvblwvTjIuanBnIl19LCJvcGVyYXRpb25zIjpbeyJ0eXBlIjoicmVzaXplIiwid2lkdGgiOjE5MjB9XSwib3V0cHV0Ijp7InF1YWxpdHkiOjcwfX0= 1920w" sizes="40vw" alt="Professional photographer">
+            </div>
+        </div>
+
+
+
+
+    <div class="section6 h-auto w-full pb-10 items-center flex flex-col ">
+        
+        <h1 class="text-3xl mt-8 font-bold lg:text-4xl md:text-4xl text-blue-900"><span class="text-white"> Stay</span> updated</h1>
+        <h1 class="mt-2 w-full text-xl font-bold text-white lg:text-3xl md:text-3xl text-center flex content-center lg:flex justify-center" >Get the latest photographic news and inspiration</h1>
+        <div class="but w-full flex flex-col items-center lg:flex-row md:flex-row lg:justify-center md:justify-center">
+            <div class="button-first mt-10 lg:mt-2 lg:mr-2 md:mr-2 md:mt-2  pt-3 text-white text-center w-10/12 lg:w-40 md:w-40 h-12 rounded-full hover:shadow-xl">
+                Photographer
+            </div>
+            <div class="button-second mt-2 lg:mt-2 lg:ml-2 md:ml-2 md:mt-2 pt-3 text-white text-center w-10/12 lg:w-40 md:w-40  h-12 rounded-full hover:shadow-xl">
+                Business
+            </div>
+       </div>
+
+    </div>
+
+
+
+
+    <footer >
+        <div id="footerr" class="footerr flex justify-center text-white w-full h-full">
+            <div class="contain flex flex-col mt-16 mb-24 h-2/3 w-4/5">
+            <div class="upper-foot flex-wrap-reverse flex box-border">
+                <div class="links flex flex-wrap mr-auto">
+                <ul class="pb-2 mr-24">
+                    <li class="title font-bold text-xl mb-4 ">
+                        <a href="/en/photographer">Photographers</a>
+                    </li>
+                    <li>
+                        <a href="/en/photographer">mygigs</a>
+                    </li>
+                    <li>
+                       <a href="/en/photographer">myBusiness</a>
+                    </li>
+                    <li>
+                        <a href="/en/photographer">community</a>
+                    </li>
+                    <li>
+                        <a href="/en/photographer">Discovery</a>
+                    </li>
+                    <li>
+                        <a href="https://www.blind-magazine.com/en">Blind</a>
+                    </li>
+                    <li>
+                        <a href="/en/subscribe">Sign up</a>
+                    </li>
+                </ul>
+                <ul class="pb-2 mr-24">
+                    <li class="title font-bold text-xl mb-4">
+                        <a href="/en/business">Business</a>
+                    </li>
+                    <li>
+                        <a href="/en/real-estate">Real Estate</a>
+                    </li>
+                    <li>
+                        <a href="/en/corporate">Corporate</a>
+                    </li>
+                    <li>
+                        <a href="/en/food">Food</a>
+                    </li>
+                    <li>
+                        <a href="/en/lifestyle">Lifestyle</a>
+                    </li>
+                    <li>
+                        <a href="/en/e-commerce">E-commerce</a>
+                    </li>
+                    <li>
+                        <a href="/en/retail">Retail</a>
+                    </li>
+                    <li>
+                        <a href="/en/subscribe">Order</a>
+                    </li>
+                </ul>
+                <ul class="pb-2 mr-24">
+                    <li class="title font-bold text-xl mb-4">
+                       <a>More</a>
+                    </li>                        
+                    <li>
+                        <a href="/en/about-us">About us</a>
+                    </li> 
+                   <li>
+                        <a href="/en/technology">Technology</a>
+                    </li>
+                    <li>
+                        <a href="/en/news">Blog</a>
+                    </li>
+                    <li>
+                        <a href="/en/gallery">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="/en/newsroom">Newsroom</a>
+                    </li>
+                    <li>
+                        <a href="/en/join-us">Careers</a>
+                    </li>
+                    <li>
+                        <a href="/en/our-team">Our Team</a>
+                    </li>
+                    <li>
+                        <a href="/en/contact-us#contact_us" data-js-id="open_bot">Contact us</a>
+                    </li>
+                    <li>
+                        <a href="    https://help.meero.com/en/">Help</a>
+                    </li>
+                </ul>
+                <ul class="pb-2 mr-24">
+                    <li class="title font-bold text-xl mb-4">
+                        <a>Legal</a>
+                    </li>
+                    <li>
+                        <a href="/en/legal-notices">Legal Notice</a>
+                    </li> 
+                   <li>
+                        <a href="/en/terms-and-conditions">Terms &amp; Conditions</a>          
+                    </li>
+                    <li>
+                        <a href="/en/terms-of-use">Terms of Use</a>
+                    </li>
+                    <li>
+                        <a href="/en/privacy-policy">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr class="mt-8 mb-10 line w-full h-0 bg-gray-100"/>
+
+                <ul class="footer__bottom justify-between flex items-start flex-col-reverse md:flex-row lg:flex-row lg:justify-between">
+                    <ul class="left flex flex-col w-1/2 lg:items-start lg:flex-row mt-4 " >
+                        <li class="logo mr-5">
+                            <svg class="fill-current text-white" viewBox="0 0 1000 184.06">
+                                 <g><g><path class="footer" d="M183.11,100.58c-14.41,4.46-47.04,14.46-70.52,14.46c-28.56,0,6.82-37.15-15.16-37.15 c-29.57,0-81.29,30.82-93.22,37.54C1.6,116.9,0,119.66,0,122.65v22.6v38.81l27.2-38.81h147.72c7.04,0,12.74-5.7,12.74-12.74
+                v-28.58C187.66,101.57,185.37,99.88,183.11,100.58z"></path> <path class="footer" d="M174.92,10.03H93.83l-68.91,0.28C23.92,4.48,18.84,0,12.74,0C5.92,0,0.34,5.58,0.34,12.4v41.21
+                c0,0.04,0.01,0.08,0.01,0.13L0.34,78.58c0.01,3.05,3.3,4.95,5.95,3.44c18.59-10.61,76.84-42.04,114.73-42.04
+                c29.48,0-16.01,38.04,13.6,38.04c17.62,0,39.84-6.18,48.9-10.31c2.52-1.15,4.13-3.66,4.13-6.42V22.77
+                C187.66,15.74,181.95,10.03,174.92,10.03z"></path></g>                <g>
+                                        <path class="footer" d="M258.44,146.75V9.12h30.31v12.92c8.94-10.76,20.87-16.15,35.77-16.15c9.6,0,17.55,1.66,23.85,4.97
+                c6.29,3.31,11.84,8.78,16.64,16.4c10.76-14.24,25.42-21.36,43.97-21.36c37.26,0,55.9,20.46,55.9,61.36v79.5h-33.04V71.23
+                c0-12.25-2.03-21.16-6.09-26.71c-4.06-5.55-10.64-8.32-19.75-8.32c-9.94,0-17.06,3.27-21.36,9.81
+                c-4.31,6.54-6.46,17.51-6.46,32.92v67.82h-33.04V71.23c0-12.25-2.11-21.16-6.34-26.71c-4.22-5.55-10.97-8.32-20.25-8.32
+                c-9.94,0-16.94,3.19-20.99,9.56c-4.06,6.38-6.09,17.43-6.09,33.17v67.82H258.44z"></path>
+                                        <path class="footer" d="M620.9,92.59H514.32c1.99,8.28,6.33,14.87,13.04,19.75c6.71,4.89,15.03,7.33,24.97,7.33
+                c6.96,0,12.67-0.99,17.14-2.98c4.47-1.99,8.86-5.55,13.17-10.68h36.02c-4.14,12.92-12.34,23.48-24.59,31.68
+                c-12.26,8.2-25.92,12.3-40.99,12.3c-20.87,0-38.51-6.87-52.91-20.62c-14.41-13.75-21.61-30.72-21.61-50.93
+                c0-20.2,7.04-37.35,21.12-51.42c14.07-14.08,31.22-21.12,51.43-21.12c20.53,0,37.51,6.96,50.93,20.87
+                c13.42,13.91,20.12,31.64,20.12,53.16C622.14,84.4,621.73,88.62,620.9,92.59z M513.33,63.53h76.27
+                c-4.31-18.22-16.89-27.33-37.76-27.33C531.46,36.2,518.63,45.31,513.33,63.53z"></path>
+                                        <path class="footer" d="M772.44,92.59H665.86c1.99,8.28,6.33,14.87,13.04,19.75c6.71,4.89,15.03,7.33,24.97,7.33
+                c6.96,0,12.67-0.99,17.14-2.98c4.47-1.99,8.86-5.55,13.17-10.68h36.02c-4.14,12.92-12.34,23.48-24.59,31.68
+                c-12.26,8.2-25.92,12.3-40.99,12.3c-20.87,0-38.51-6.87-52.91-20.62c-14.41-13.75-21.61-30.72-21.61-50.93
+                c0-20.2,7.04-37.35,21.12-51.42c14.07-14.08,31.22-21.12,51.43-21.12c20.53,0,37.51,6.96,50.93,20.87
+                c13.42,13.91,20.12,31.64,20.12,53.16C773.68,84.4,773.27,88.62,772.44,92.59z M664.87,63.53h76.27
+                c-4.31-18.22-16.89-27.33-37.76-27.33C683,36.2,670.17,45.31,664.87,63.53z"></path>
+                                        <path class="footer" d="M787.59,146.75V9.12h30.31v13.41c4.31-6.29,8.61-10.64,12.92-13.04c4.31-2.4,9.85-3.6,16.64-3.6h2.73v31.8
+                c-19.71,0-29.56,10.85-29.56,32.54v76.52H787.59z"></path>
+                                        <path class="footer" d="M926.71,5.89c20.53,0,37.89,7,52.05,20.99c14.16,14,21.24,31.1,21.24,51.3c0,19.71-7.12,36.6-21.36,50.68
+                c-14.25,14.08-31.47,21.12-51.67,21.12c-20.21,0-37.47-6.99-51.8-20.99c-14.33-13.99-21.49-31.01-21.49-51.05
+                c0-19.88,7.12-36.85,21.36-50.93C889.28,12.93,906.5,5.89,926.71,5.89z M926.71,36.2c-11,0-20.42,4.06-28.25,12.17
+                c-7.83,8.12-11.75,17.97-11.75,29.56c0,11.59,3.91,21.45,11.75,29.56c7.83,8.12,17.25,12.17,28.25,12.17
+                c11.16,0,20.66-4.06,28.5-12.17c7.83-8.11,11.75-17.97,11.75-29.56c0-11.59-3.92-21.45-11.75-29.56
+                C947.38,40.26,937.88,36.2,926.71,36.2z"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </li>
+                        <li class="copyright lg:mr-5 mt-8 xl:mt-0 lg:mt-0 md:mt-8">Copyright © Meero, 2020</li>
+                    </ul>
+                    <ul class="rightt-side mb-10 lg:mb-2 flex flex-col-reverse mt-4 lg:flex-row">
+                        <li class="mt-8 lg:mt-0 md:mt-8 xl:ml-5 lg:ml-5 md:ml-0 ">
+                            <button type="button" class="bton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="flag"></span> <span class="language__label">English</span>
+                                <span class="caret"></span>
+                            </button>    
+                        </li>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+           
+                        <li class="lg:ml-5">
+                        <ul class="links flex ml-auto">
+                                <li>
+                                    <a href="https://www.facebook.com/meerophoto/" target="_blank" rel="noopener">
+                                        <img class="w-8 h-8 mr-4 ml-0" src="https://assets.meero.com/meeroshowcase/images/front/V5/footer/facebook.svg" alt="Facebook">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/meerophoto/" target="_blank" rel="noopener">
+                                        <img class="w-8 h-8 mr-4 ml-4" src="https://assets.meero.com/meeroshowcase/images/front/V5/footer/instagram.svg" alt="Instagram">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCFBS_W-csBawS_YK7DSwyjw" target="_blank" rel="noopener">
+                                        <img class="w-8 h-8 mr-4 ml-4" src="https://assets.meero.com/meeroshowcase/images/front/V5/footer/youtube.svg" alt="YouTube">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/company/meero/" target="_blank" rel="noopener">
+                                        <img class="w-8 h-8 mr-4 ml-4" src="https://assets.meero.com/meeroshowcase/images/front/V5/footer/linkedin.svg" alt="Linkedin">
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>
+
+
